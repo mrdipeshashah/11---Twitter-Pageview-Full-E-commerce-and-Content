@@ -1,0 +1,927 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2020-01-26 21:10:08",
+    "containerVersion": {
+        "path": "accounts/4701529512/containers/13452180/versions/0",
+        "accountId": "4701529512",
+        "containerId": "13452180",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/4701529512/containers/13452180",
+            "accountId": "4701529512",
+            "containerId": "13452180",
+            "name": "11 - Twitter Pageview, Full E-commerce and Content",
+            "publicId": "GTM-KT7HL3G",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1580072834417",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/4701529512/containers/13452180/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "tagId": "4",
+                "name": "Twitter Add to Cart",
+                "type": "twitter_website_tag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "event_type",
+                        "value": "AddToCart"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "twitter_pixel_id",
+                        "value": "{{Twitter Universal Website Tag ID}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "event_parameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "param_table_key_column",
+                                        "value": "content_ids"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "param_table_value_column",
+                                        "value": "{{DLV - AddToCart Product ID}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "param_table_key_column",
+                                        "value": "content_type"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "param_table_value_column",
+                                        "value": "{{DLV - AddToCart Category}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1575283317670",
+                "firingTriggerId": [
+                    "20"
+                ],
+                "parentFolderId": "41",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "tagId": "5",
+                "name": "Twitter Checkout",
+                "type": "twitter_website_tag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "event_type",
+                        "value": "InitiateCheckout"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "twitter_pixel_id",
+                        "value": "{{Twitter Universal Website Tag ID}}"
+                    }
+                ],
+                "fingerprint": "1575283331329",
+                "firingTriggerId": [
+                    "21"
+                ],
+                "parentFolderId": "41",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "tagId": "3",
+                "name": "Twitter E-commerce",
+                "type": "twitter_website_tag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "event_type",
+                        "value": "Purchase"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "twitter_pixel_id",
+                        "value": "{{Twitter Universal Website Tag ID}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "event_parameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "param_table_key_column",
+                                        "value": "value"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "param_table_value_column",
+                                        "value": "{{DLV - Revenue}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "param_table_key_column",
+                                        "value": "order_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "param_table_value_column",
+                                        "value": "{{DLV - Transaction ID}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1575283340626",
+                "firingTriggerId": [
+                    "36"
+                ],
+                "parentFolderId": "41",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "tagId": "8",
+                "name": "Twitter Pageview",
+                "type": "twitter_website_tag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "event_type",
+                        "value": "PageView"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "twitter_pixel_id",
+                        "value": "{{Twitter Universal Website Tag ID}}"
+                    }
+                ],
+                "fingerprint": "1575283349878",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "41",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "tagId": "10",
+                "name": "Twitter View Content",
+                "type": "twitter_website_tag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "event_type",
+                        "value": "ViewContent"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "twitter_pixel_id",
+                        "value": "{{Twitter Universal Website Tag ID}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "event_parameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "param_table_key_column",
+                                        "value": "content_ids"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "param_table_value_column",
+                                        "value": "{{DLV - View Content ID}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "param_table_key_column",
+                                        "value": "content_type"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "param_table_value_column",
+                                        "value": "{{DLV - View Content Category}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1575283361599",
+                "firingTriggerId": [
+                    "26"
+                ],
+                "parentFolderId": "41",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "triggerId": "36",
+                "name": "Live E-commerce Confirmation",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "purchase"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1580072818034",
+                "parentFolderId": "8"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "triggerId": "20",
+                "name": "addToCart",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "addToCart"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1575566141001",
+                "parentFolderId": "19"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "triggerId": "21",
+                "name": "checkout",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "checkout"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1575566147158",
+                "parentFolderId": "19"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "triggerId": "26",
+                "name": "productDetail",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "productDetail"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1575249991542",
+                "parentFolderId": "33"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "variableId": "11",
+                "name": "DLV - AddToCart Category",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.add.products.0.category"
+                    }
+                ],
+                "fingerprint": "1575249991563",
+                "parentFolderId": "6",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "variableId": "14",
+                "name": "DLV - AddToCart Product ID",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.add.products.0.id"
+                    }
+                ],
+                "fingerprint": "1575249991570",
+                "parentFolderId": "6",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "variableId": "5",
+                "name": "DLV - Revenue",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.purchase.actionField.revenue"
+                    }
+                ],
+                "fingerprint": "1575282579439",
+                "parentFolderId": "6",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "variableId": "6",
+                "name": "DLV - Transaction ID",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.purchase.actionField.id"
+                    }
+                ],
+                "fingerprint": "1575565906305",
+                "parentFolderId": "6",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "variableId": "17",
+                "name": "DLV - View Content Category",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.detail.products.0.category"
+                    }
+                ],
+                "fingerprint": "1575249991575",
+                "parentFolderId": "6",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "variableId": "18",
+                "name": "DLV - View Content ID",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.detail.products.0.id"
+                    }
+                ],
+                "fingerprint": "1575249991577",
+                "parentFolderId": "6",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "variableId": "10",
+                "name": "Twitter Universal Website Tag ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "ABC12"
+                    }
+                ],
+                "fingerprint": "1575282739387",
+                "parentFolderId": "13",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "28",
+                "name": "Bing Tags",
+                "fingerprint": "1575249991532"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "6",
+                "name": "Data Layer Variables",
+                "fingerprint": "1575223968938"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "29",
+                "name": "DoubleClick Tags",
+                "fingerprint": "1575249991533"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "8",
+                "name": "E-commerce Triggers",
+                "fingerprint": "1575223968939"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "19",
+                "name": "Enhanced E-commerce Triggers",
+                "fingerprint": "1575224109113"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "30",
+                "name": "Facebook Tags",
+                "fingerprint": "1575249991534"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "31",
+                "name": "Google Adwords Tags",
+                "fingerprint": "1575249991535"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "11",
+                "name": "Google Analytics Tags",
+                "fingerprint": "1575223968940"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "32",
+                "name": "Other Tags",
+                "fingerprint": "1575249991536"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "13",
+                "name": "Platform Variables",
+                "fingerprint": "1575223968940"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "33",
+                "name": "Product Trigger",
+                "fingerprint": "1575249991537"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "34",
+                "name": "Triggers",
+                "fingerprint": "1575249991537"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "41",
+                "name": "Twitter Tags",
+                "fingerprint": "1575283313687"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "folderId": "35",
+                "name": "VP Trigger",
+                "fingerprint": "1575249991538"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "CLICK_ELEMENT",
+                "name": "Click Element"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "CLICK_CLASSES",
+                "name": "Click Classes"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "CLICK_ID",
+                "name": "Click ID"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "CLICK_TARGET",
+                "name": "Click Target"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "CLICK_URL",
+                "name": "Click URL"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "CLICK_TEXT",
+                "name": "Click Text"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "FORM_ELEMENT",
+                "name": "Form Element"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "FORM_CLASSES",
+                "name": "Form Classes"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "FORM_ID",
+                "name": "Form ID"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "FORM_TARGET",
+                "name": "Form Target"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "FORM_URL",
+                "name": "Form URL"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "FORM_TEXT",
+                "name": "Form Text"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "ERROR_MESSAGE",
+                "name": "Error Message"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "ERROR_URL",
+                "name": "Error URL"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "ERROR_LINE",
+                "name": "Error Line"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "NEW_HISTORY_FRAGMENT",
+                "name": "New History Fragment"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "OLD_HISTORY_FRAGMENT",
+                "name": "Old History Fragment"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "NEW_HISTORY_STATE",
+                "name": "New History State"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "OLD_HISTORY_STATE",
+                "name": "Old History State"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "HISTORY_SOURCE",
+                "name": "History Source"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "CONTAINER_VERSION",
+                "name": "Container Version"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "DEBUG_MODE",
+                "name": "Debug Mode"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "RANDOM_NUMBER",
+                "name": "Random Number"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "CONTAINER_ID",
+                "name": "Container ID"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "HTML_ID",
+                "name": "HTML ID"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "ENVIRONMENT_NAME",
+                "name": "Environment Name"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "VIDEO_PROVIDER",
+                "name": "Video Provider"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "VIDEO_URL",
+                "name": "Video URL"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "VIDEO_TITLE",
+                "name": "Video Title"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "VIDEO_DURATION",
+                "name": "Video Duration"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "VIDEO_PERCENT",
+                "name": "Video Percent"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "VIDEO_VISIBLE",
+                "name": "Video Visible"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "VIDEO_STATUS",
+                "name": "Video Status"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "VIDEO_CURRENT_TIME",
+                "name": "Video Current Time"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "SCROLL_DEPTH_THRESHOLD",
+                "name": "Scroll Depth Threshold"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "SCROLL_DEPTH_UNITS",
+                "name": "Scroll Depth Units"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "SCROLL_DEPTH_DIRECTION",
+                "name": "Scroll Direction"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "ELEMENT_VISIBILITY_RATIO",
+                "name": "Percent Visible"
+            },
+            {
+                "accountId": "4701529512",
+                "containerId": "13452180",
+                "type": "ELEMENT_VISIBILITY_TIME",
+                "name": "On-Screen Duration"
+            }
+        ],
+        "fingerprint": "0",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/4701529512/containers/13452180/versions/0?apiLink=version"
+    }
+}
